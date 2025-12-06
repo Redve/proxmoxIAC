@@ -1,5 +1,6 @@
 # Proxmox IAC
 This is my Proxmox IAC for my homelab. Using opentofu together with the Telmate/proxmox provider.
+Some mappings needs to be done in the console or thorugh the web interface.
 
 ![Provider](https://img.shields.io/badge/provider-telmate-proxmox)
 ![OpenTofu Version](https://img.shields.io/badge/opentofu-%3E%3D1.0-blueviolet)
