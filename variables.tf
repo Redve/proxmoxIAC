@@ -1,14 +1,24 @@
 variable "pm_api_token_id" {
-  type = string
+  type        = string
   description = "The API token id of the Proxmox VE instance"
 }
 
 variable "pm_api_token_secret" {
-  type = string
+  type        = string
   description = "The API token secret of the Proxmox VE instance"
 }
 
 variable "api_url" {
-  type = string
+  type        = string
   description = "The API URL of the Proxmox VE instance"
+}
+
+variable "unraid_flash_mapping_id" {
+  type        = string
+  description = "Mapping ID of the Unraid flash"
+}
+
+variable "unraid_sata_mapping_id" {
+  type        = string
+  description = "Mapping ID of the Unraid Sata Controller"
 }
