@@ -3,14 +3,16 @@ resource "proxmox_vm_qemu" "TalosWorker" {
   vmid               = 210
   target_node        = "pve1"
   description        = "TalosOS Worker VM provisioned by OpenTofu"
-  memory             = 4096
+  memory             = 8196
   start_at_node_boot = false
   tags               = "k8sworker"
   agent              = 1
+  skip_ipv6          = true
+  agent_timeout      = 5
   boot               = "order=virtio0;ide2"
   cpu {
-    cores   = 4
-    sockets = 1
+    cores   = 3
+    sockets = 2
   }
   disks {
     ide {
